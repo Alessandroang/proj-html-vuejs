@@ -40,24 +40,26 @@ export default {
         <li><a href="#">Home</a></li>
         <li><a href="#">About Us</a></li>
         <!-- Elemento del menu a tendina -->
-        <li class="nav-item dropdown" @click="toggleDropdown">
+
+        <div class="dropdown">
           <a
-            class="nav-link dropdown-toggle"
+            class="dropdown-toggle"
             href="#"
             role="button"
+            data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Trainings <i class="fas fa-chevron-down"></i>
+            Trainings
           </a>
-          <!-- Voci del menu a tendina -->
-          <ul class="dropdown-menu" v-show="isDropdownOpen">
+
+          <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Riding Lessons</a></li>
             <li><a class="dropdown-item" href="#">Safe Driving</a></li>
             <li><a class="dropdown-item" href="#">Mountain Bike</a></li>
             <li><a class="dropdown-item" href="#">Trail Drive</a></li>
             <li><a class="dropdown-item" href="#">Pedaling</a></li>
           </ul>
-        </li>
+        </div>
 
         <!-- Altri elementi del menu -->
         <li><a href="#">Packages</a></li>
@@ -76,7 +78,8 @@ export default {
     <!-- Sezione del pulsante -->
     <div class="button-container">
       <button class="btn btn-black">
-        Upcoming Events <i class="fas fa-arrow-right"></i>
+        <i class="fas fa-hard-hat"></i> Upcoming Events
+        <i class="fas fa-arrow-right"></i>
       </button>
     </div>
   </header>
