@@ -132,6 +132,12 @@
               suscipit optio deleniti beatae, tempore inventore fuga sint,
             </p>
           </div>
+          <div class="button-container">
+            <button class="btn btn-black btn-lg">
+              Get to know us
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -159,7 +165,7 @@ export default {
 
 <style lang="scss">
 .carousel-item {
-  height: 400px;
+  height: 600px;
 }
 .carousel-item img {
   height: 100%;
@@ -174,5 +180,14 @@ export default {
   background-image: url("../../assets/img/bike-circle.png");
   background-size: 100%;
   background-repeat: no-repeat;
+}
+
+.button-container {
+  margin-right: 20px;
+}
+
+.btn-black {
+  background-color: black;
+  color: white;
 }
 </style>
