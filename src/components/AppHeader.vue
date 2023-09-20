@@ -1,44 +1,19 @@
-<template>
-  <header class="header-content">
-    <div class="logo-container">
-      <img
-        src="../assets/img/logo-gobike.png"
-        class="logo-img"
-        alt="logo-header"
-      />
-    </div>
-    <div class="menu-container">
-      <ul class="list">
-        <li><a href="">Home</a></li>
-        <li><a href="">About Us</a></li>
-        <li><a href="">Trainings</a></li>
-        <li><a href="">Packages</a></li>
-        <li><a href="">Blog</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
-    </div>
-    <div class="hamburger-menu" @click="toggleMenu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <div class="button-container">
-      <button class="btn btn-black">
-        Upcoming Events<i class="fas fa-arrow-right"></i>
-      </button>
-    </div>
-  </header>
-</template>
-
 <script>
 export default {
   name: "AppHeader",
   data() {
     return {
-      isMenuOpen: false,
+      isDropdownOpen: false,
     };
   },
   methods: {
+    // Funzione per attivare/disattivare il menu a tendina
+
+    toggleDropdown() {
+      this.isDropdownOpen = !this.isDropdownOpen;
+    },
+    // Funzione per attivare/disattivare il menu a scomparsa
+
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
     },
@@ -46,13 +21,74 @@ export default {
 };
 </script>
 
+<template>
+  <!-- Componente dell'intestazione -->
+  <header class="header-content">
+    <!-- Sezione del logo -->
+    <div class="logo-container">
+      <img
+        src="../assets/img/logo-gobike.png"
+        class="logo-img"
+        alt="logo-header"
+      />
+    </div>
+
+    <!-- Sezione del menu -->
+    <div class="menu-container">
+      <ul class="list">
+        <!-- Elementi del menu -->
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <!-- Elemento del menu a tendina -->
+        <li class="nav-item dropdown" @click="toggleDropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            aria-expanded="false"
+          >
+            Trainings <i class="fas fa-chevron-down"></i>
+          </a>
+          <!-- Voci del menu a tendina -->
+          <ul class="dropdown-menu" v-show="isDropdownOpen">
+            <li><a class="dropdown-item" href="#">Riding Lessons</a></li>
+            <li><a class="dropdown-item" href="#">Safe Driving</a></li>
+            <li><a class="dropdown-item" href="#">Mountain Bike</a></li>
+            <li><a class="dropdown-item" href="#">Trail Drive</a></li>
+            <li><a class="dropdown-item" href="#">Pedaling</a></li>
+          </ul>
+        </li>
+
+        <!-- Altri elementi del menu -->
+        <li><a href="#">Packages</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Menu a scomparsa -->
+    <div class="hamburger-menu" @click="toggleMenu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Sezione del pulsante -->
+    <div class="button-container">
+      <button class="btn btn-black">
+        Upcoming Events <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+  </header>
+</template>
+
 <style lang="scss" scoped>
 .header-content {
+  height: 100px;
   background-color: white;
   color: #fff;
-  padding: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -63,6 +99,10 @@ export default {
 .btn-black {
   background-color: black;
   color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
 }
 
 .btn-black i {
@@ -84,6 +124,7 @@ export default {
   li {
     padding: 0px 10px;
   }
+
   a {
     text-decoration: none;
     color: black;
