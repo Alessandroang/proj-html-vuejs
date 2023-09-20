@@ -88,6 +88,54 @@
       </button>
     </div>
   </div>
+  <div class="container">
+    <div class="row">
+      <!-- Colonna sinistra - immagine -->
+      <div class="col-md-6 sfondo-div">
+        <img
+          src="../../assets/img/bike-player.png"
+          alt="Immagine"
+          class="img-fluid"
+        />
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex flex-column align-items-start">
+          <!-- Titolo -->
+          <h2>Do you want to be a professional cyclist?</h2>
+
+          <!-- Sottotitolo -->
+          <h6>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sed
+            possimus quaerat fuga. Aperiam, officia rerum? Illo repellendus
+            inventore ipsam odio quisquam nisi, distinctio voluptatum optio hic
+            minima, perspiciatis reiciendis!
+          </h6>
+
+          <img
+            src="../../assets/img/divider.jpg"
+            alt="Divider"
+            class="divider-img"
+          />
+
+          <div class="d-flex flex-column align-items-center mt-4">
+            <i class="fas fa-hard-hat mb-4"></i>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              suscipit optio deleniti beatae, tempore inventore fuga sint,
+            </p>
+          </div>
+
+          <div class="d-flex flex-column align-items-center mt-4">
+            <i class="fas fa-bicycle mb-4"></i>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              suscipit optio deleniti beatae, tempore inventore fuga sint,
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -117,5 +165,14 @@ export default {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+.divider-img {
+  width: 100px;
+  padding-top: 10px;
+}
+.sfondo-div {
+  background-image: url("../../assets/img/bike-circle.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 </style>
