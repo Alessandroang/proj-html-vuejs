@@ -1,3 +1,22 @@
+<script>
+export default {
+  methods: {
+    showNextSlide() {
+      const carousel = new bootstrap.Carousel(
+        document.getElementById("carouselExampleCaptions")
+      );
+      carousel.next();
+    },
+    showPreviousSlide() {
+      const carousel = new bootstrap.Carousel(
+        document.getElementById("carouselExampleCaptions")
+      );
+      carousel.prev();
+    },
+  },
+};
+</script>
+
 <template>
   <div class="container-fluid">
     <div
@@ -92,6 +111,7 @@
     <div class="row">
       <!-- Colonna sinistra - immagine -->
       <div class="col-md-6 sfondo-div">
+        <div class="ruota"></div>
         <img
           src="../../assets/img/bike-player.png"
           alt="Immagine"
@@ -101,7 +121,7 @@
       <div class="col-md-6">
         <div class="d-flex flex-column align-items-start">
           <!-- Titolo -->
-          <h2>Do you want to be a professional cyclist?</h2>
+          <h1>Do you want to be a professional cyclist?</h1>
 
           <!-- Sottotitolo -->
           <h6>
@@ -118,7 +138,8 @@
           />
 
           <div class="d-flex flex-column align-items-center mt-4">
-            <i class="fas fa-hard-hat mb-4"></i>
+            <i class="fas fa-hard-hat fa-2xl mb-4"></i>
+
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
               suscipit optio deleniti beatae, tempore inventore fuga sint,
@@ -126,7 +147,7 @@
           </div>
 
           <div class="d-flex flex-column align-items-center mt-4">
-            <i class="fas fa-bicycle mb-4"></i>
+            <i class="fas fa-bicycle fa-2xl mb-4"></i>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
               suscipit optio deleniti beatae, tempore inventore fuga sint,
@@ -144,28 +165,9 @@
   </div>
 </template>
 
-<script>
-export default {
-  methods: {
-    showNextSlide() {
-      const carousel = new bootstrap.Carousel(
-        document.getElementById("carouselExampleCaptions")
-      );
-      carousel.next();
-    },
-    showPreviousSlide() {
-      const carousel = new bootstrap.Carousel(
-        document.getElementById("carouselExampleCaptions")
-      );
-      carousel.prev();
-    },
-  },
-};
-</script>
-
 <style lang="scss">
 .carousel-item {
-  height: 600px;
+  height: 500px;
 }
 .carousel-item img {
   height: 100%;

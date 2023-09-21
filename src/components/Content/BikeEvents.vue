@@ -2,7 +2,7 @@
   <div class="container">
     <div class="text-center mb-4">
       <h1>Don't Miss Our Events!</h1>
-      <h6>Get the amazing cycling experience</h6>
+      <h5>Get the amazing cycling experience</h5>
     </div>
     <div class="row">
       <!-- Prima riga con 3 card -->
@@ -15,7 +15,12 @@
             alt="Card image"
           />
           <div class="card-body">
-            <p class="card-text">Description for card 1.</p>
+            <h5 class="card-title">New Jersey Cycling Event 2023</h5>
+            <ul class="event-details">
+              <li><i class="fas fa-clock"></i> 28-04-1994 @ 07:30</li>
+              <li><i class="fas fa-map-marker-alt"></i>New Jersey</li>
+            </ul>
+            <span class="custom-button">Bicycle Race</span>
           </div>
         </div>
       </div>
@@ -28,7 +33,12 @@
             alt="Card image"
           />
           <div class="card-body">
-            <p class="card-text">Description for card 2.</p>
+            <h5 class="card-title">New Jersey Cycling Event 2023</h5>
+            <ul class="event-details">
+              <li><i class="fas fa-clock"></i> 28-04-1994 @ 07:30</li>
+              <li><i class="fas fa-map-marker-alt"></i>New Jersey</li>
+            </ul>
+            <span class="custom-button">Bicycle Race</span>
           </div>
         </div>
       </div>
@@ -41,7 +51,12 @@
             alt="Card image"
           />
           <div class="card-body">
-            <p class="card-text">Description for card 3.</p>
+            <h5 class="card-title">New Jersey Cycling Event 2023</h5>
+            <ul class="event-details">
+              <li><i class="fas fa-clock"></i> 28-04-1994 @ 07:30</li>
+              <li><i class="fas fa-map-marker-alt"></i>New Jersey</li>
+            </ul>
+            <span class="custom-button">Bicycle Race</span>
           </div>
         </div>
       </div>
@@ -58,7 +73,12 @@
             alt="Card image"
           />
           <div class="card-body">
-            <p class="card-text">Description for card 4.</p>
+            <h5 class="card-title">New Jersey Cycling Event 2023</h5>
+            <ul class="event-details">
+              <li><i class="fas fa-clock"></i> 28-04-1994 @ 07:30</li>
+              <li><i class="fas fa-map-marker-alt"></i>New Jersey</li>
+            </ul>
+            <span class="custom-button">Bicycle Race</span>
           </div>
         </div>
       </div>
@@ -71,7 +91,12 @@
             alt="Card image"
           />
           <div class="card-body">
-            <p class="card-text">Description for card 5.</p>
+            <h5 class="card-title">New Jersey Cycling Event 2023</h5>
+            <ul class="event-details">
+              <li><i class="fas fa-clock"></i> 28-04-1994 @ 07:30</li>
+              <li><i class="fas fa-map-marker-alt"></i>New Jersey</li>
+            </ul>
+            <span class="custom-button">Bicycle Race</span>
           </div>
         </div>
       </div>
@@ -84,7 +109,12 @@
             alt="Card image"
           />
           <div class="card-body">
-            <p class="card-text">Description for card 6.</p>
+            <h5 class="card-title">New Jersey Cycling Event 2023</h5>
+            <ul class="event-details">
+              <li><i class="fas fa-clock"></i> 28-04-1994 @ 07:30</li>
+              <li><i class="fas fa-map-marker-alt"></i>New Jersey</li>
+            </ul>
+            <span class="custom-button">Bicycle Race</span>
           </div>
         </div>
       </div>
@@ -101,7 +131,12 @@
             alt="Card image"
           />
           <div class="card-body">
-            <p class="card-text">Description for card 7.</p>
+            <h5 class="card-title">New Jersey Cycling Event 2023</h5>
+            <ul class="event-details">
+              <li><i class="fas fa-clock"></i> 28-04-1994 @ 07:30</li>
+              <li><i class="fas fa-map-marker-alt"></i>New Jersey</li>
+            </ul>
+            <span class="custom-button">Bicycle Race</span>
           </div>
         </div>
       </div>
@@ -114,7 +149,12 @@
             alt="Card image"
           />
           <div class="card-body">
-            <p class="card-text">Description for card 8.</p>
+            <h5 class="card-title">New Jersey Cycling Event 2023</h5>
+            <ul class="event-details">
+              <li><i class="fas fa-clock"></i> 28-04-1994 @ 07:30</li>
+              <li><i class="fas fa-map-marker-alt"></i>New Jersey</li>
+            </ul>
+            <span class="custom-button">Bicycle Race</span>
           </div>
         </div>
       </div>
@@ -127,7 +167,12 @@
             alt="Card image"
           />
           <div class="card-body">
-            <p class="card-text">Description for card 9.</p>
+            <h5 class="card-title">New Jersey Cycling Event 2023</h5>
+            <ul class="event-details">
+              <li><i class="fas fa-clock"></i> 28-04-1994 @ 07:30</li>
+              <li><i class="fas fa-map-marker-alt"></i>New Jersey</li>
+            </ul>
+            <span class="custom-button">Bicycle Race</span>
           </div>
         </div>
       </div>
@@ -144,7 +189,12 @@
             alt="Card image"
           />
           <div class="card-body">
-            <p class="card-text">Description for card 10.</p>
+            <h5 class="card-title">New Jersey Cycling Event 2023</h5>
+            <ul class="event-details">
+              <li><i class="fas fa-clock"></i> 28-04-1994 @ 07:30</li>
+              <li><i class="fas fa-map-marker-alt"></i>New Jersey</li>
+            </ul>
+            <span class="custom-button">Bicycle Race</span>
           </div>
         </div>
       </div>
@@ -161,5 +211,31 @@
   color: black;
   font-weight: bold;
   padding: 5px;
+}
+.event-details {
+  list-style: none;
+  padding: 0;
+}
+
+.event-details li i {
+  margin-right: 5px;
+}
+.custom-button {
+  display: inline-block;
+  padding: 5px 5px;
+  background-color: #f0f0f0; /* Colore di sfondo grigio */
+  color: #333; /* Colore del testo */
+  border-radius: 5px;
+  cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+}
+
+.custom-button:hover {
+  background-color: #e0e0e0; /* Cambia il colore di sfondo al passaggio del mouse */
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: black;
 }
 </style>
