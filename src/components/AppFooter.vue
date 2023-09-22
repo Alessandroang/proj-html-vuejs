@@ -5,10 +5,10 @@ export default {
 </script>
 
 <template>
-  <div class="menu-footer bg-dark text-white">
-    <div class="container d-flex justify-content-between">
+  <div class="menu-footer bg-black mt-4 text-white">
+    <div class="container mt-4 d-flex justify-content-around">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3 text-center">
           <div class="logo-footer">
             <img
               src="../assets/img/logo-footer-gobike.png"
@@ -30,14 +30,14 @@ export default {
               <span>ciao@ciao.com</span>
             </div>
           </div>
-          <div class="social-icons">
+          <div class="social-icons mb-2">
             <i class="fab fa-facebook"></i>
             <i class="fab fa-instagram"></i>
             <i class="fab fa-twitter"></i>
           </div>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-md-3 text-center">
           <h3>Newsletter</h3>
           <p>Subscribe to our newsletter for updates</p>
           <form>
@@ -62,7 +62,7 @@ export default {
 
         <div class="col-md-3">
           <h3>Trainings</h3>
-          <ul class="list-unstyled">
+          <ul>
             <li><a href="">Riding lessons</a></li>
             <li><a href="">Safe driving</a></li>
             <li><a href="">Mountain Bike</a></li>
@@ -73,7 +73,7 @@ export default {
 
         <div class="col-md-3">
           <h3>Quick Links</h3>
-          <ul class="list-unstyled">
+          <ul>
             <li><a href="">Home</a></li>
             <li><a href="">About Us</a></li>
             <li><a href="">Blog</a></li>
@@ -91,39 +91,67 @@ export default {
   width: 100%;
 }
 
-.icons .icon-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
+.icons {
+  .icon-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    i {
+      font-size: 18px;
+      margin-right: 10px;
+    }
+
+    span {
+      font-size: 14px;
+    }
+  }
 }
 
-.icons .icon-item i {
-  font-size: 18px;
-  margin-right: 10px;
+.social-icons {
+  i {
+    font-size: 24px;
+    margin: 0 10px;
+  }
 }
 
-.icons .icon-item span {
-  font-size: 14px;
-}
+.menu-footer {
+  h3 {
+    padding-top: 20px;
+  }
 
-.social-icons i {
-  font-size: 24px;
-  margin: 0 10px;
-}
+  ul li {
+    padding: 2px 0;
 
-.menu-footer h3 {
-  padding-top: 20px;
-}
+    a {
+      color: white;
 
-.menu-footer ul li {
-  padding: 2px 0;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
 }
+.menu-footer {
+  ul {
+    li {
+      padding: 2px 0;
+      position: relative;
+      list-style: none;
 
-.menu-footer ul li a {
-  color: white;
-}
+      &:before {
+        content: "—";
+        margin-right: 5px;
+      }
 
-.menu-footer ul li a:hover {
-  text-decoration: underline;
+      a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }
 </style>

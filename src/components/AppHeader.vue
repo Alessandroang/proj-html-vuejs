@@ -97,4 +97,8 @@ export default {
   background-color: black;
   color: white;
 }
+
+.nav-item {
+  font-weight: 700;
+}
 </style>

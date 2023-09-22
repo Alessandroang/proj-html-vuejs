@@ -54,9 +54,10 @@ export default {
             class="d-block w-100"
             alt="..."
           />
-          <div class="carousel-caption">
+          <div class="carousel-caption text-start">
             <h4>Professional Cycling Club</h4>
             <p>Learn cycling from the pros</p>
+            <button class="btn btn-black">Learn More</button>
           </div>
         </div>
         <!-- Seconda slide -->
@@ -66,9 +67,10 @@ export default {
             class="d-block w-100"
             alt="..."
           />
-          <div class="carousel-caption">
+          <div class="carousel-caption text-start">
             <h4>Professional Cycling Club</h4>
             <p>Learn cycling from the pros</p>
+            <button class="btn btn-black">Learn More</button>
           </div>
         </div>
         <!-- Terza slide -->
@@ -78,9 +80,10 @@ export default {
             class="d-block w-100"
             alt="..."
           />
-          <div class="carousel-caption">
+          <div class="carousel-caption text-start">
             <h4>Professional Cycling Club</h4>
             <p>Learn cycling from the pros</p>
+            <button class="btn btn-black">Learn More</button>
           </div>
         </div>
       </div>
@@ -107,11 +110,9 @@ export default {
       </button>
     </div>
   </div>
-  <div class="container">
+  <div class="container mt-5">
     <div class="row">
-      <!-- Colonna sinistra - immagine -->
       <div class="col-md-6 sfondo-div">
-        <div class="ruota"></div>
         <img
           src="../../assets/img/bike-player.png"
           alt="Immagine"
@@ -134,11 +135,11 @@ export default {
           <img
             src="../../assets/img/divider.jpg"
             alt="Divider"
-            class="divider-img"
+            class="divider-img mt-5"
           />
 
-          <div class="d-flex flex-column align-items-center mt-4">
-            <i class="fas fa-hard-hat fa-2xl mb-4"></i>
+          <div class="d-flex flex-column mt-5">
+            <i class="fas fa-hard-hat fa-2xl mb-5"></i>
 
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
@@ -146,8 +147,8 @@ export default {
             </p>
           </div>
 
-          <div class="d-flex flex-column align-items-center mt-4">
-            <i class="fas fa-bicycle fa-2xl mb-4"></i>
+          <div class="d-flex flex-column mt-5">
+            <i class="fas fa-bicycle fa-2xl mb-5"></i>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
               suscipit optio deleniti beatae, tempore inventore fuga sint,
@@ -173,6 +174,9 @@ export default {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+.carousel-caption {
+  top: 200px;
 }
 .divider-img {
   width: 100px;

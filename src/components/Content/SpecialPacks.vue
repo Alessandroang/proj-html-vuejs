@@ -2,8 +2,9 @@
 export default {
   data() {
     return {
+      // Variabile per tenere traccia della carta su cui è posizionato il mouse
       hoveredCard: null,
-
+      // Dati delle cards
       cards: [
         {
           title: "Basic",
@@ -48,16 +49,16 @@ export default {
 </script>
 
 <template>
-  <div class="container">
-    <div class="titles">
-      <div class="square bg-black">
-        <div class="square-white">
-          <i class="fa-solid fa-shop-lock fa-beat fa-xl text-white"></i>
-        </div>
+  <div class="container mt-5 text-center d-flex flex-column align-items-center">
+    <!--Logo quadrato -->
+
+    <div class="square bg-black">
+      <div class="square-white">
+        <i class="fa-solid fa-shop-lock fa-beat fa-xl text-white"></i>
       </div>
-      <div class="title">Special Packs</div>
-      <div class="subtitle">Select a pricing plan to get more</div>
     </div>
+    <h1>Special Packs</h1>
+    <h5>Select a pricing plan to get more</h5>
 
     <div class="row mt-4">
       <!-- Itera su ogni card nell'array e visualizzala -->
@@ -173,17 +174,9 @@ ul li:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
 
-.titles {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-
 .square {
-  width: 10rem;
-  height: 10rem;
+  width: 7rem;
+  height: 7rem;
   border: 3px solid white;
   display: flex;
   justify-content: center;
@@ -192,22 +185,10 @@ ul li:not(:last-child) {
 
 .square-white {
   border: 3px solid white;
-  width: 6rem;
-  height: 6rem;
+  width: 4rem;
+  height: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.title {
-  font-size: 3rem;
-  font-weight: 700;
-  color: black;
-}
-
-.subtitle {
-  font-size: 2rem;
-  font-weight: 400;
-  color: black;
 }
 </style>

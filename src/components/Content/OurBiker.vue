@@ -1,79 +1,57 @@
+<script>
+export default {
+  data() {
+    return {
+      trainers: [
+        {
+          name: "John Der",
+          role: "Biker",
+          imageSrc: "src/assets/img/biker1.jpg",
+        },
+        {
+          name: "John Der",
+          role: "Biker",
+          imageSrc: "src/assets/img/biker2.jpg",
+        },
+        {
+          name: "John Der",
+          role: "Biker",
+          imageSrc: "src/assets/img/biker3.jpg",
+        },
+        {
+          name: "John Der",
+          role: "Biker",
+          imageSrc: "src/assets/img/biker4.jpg",
+        },
+      ],
+    };
+  },
+};
+</script>
+
 <template>
-  <div class="container">
+  <div class="container mt-4">
     <div class="text-center mb-4">
       <h1>Our Expert Trainers</h1>
       <h5>Learn to ride a bike from the experts.</h5>
     </div>
     <div class="d-flex justify-content-center flex-wrap">
-      <div class="col-md-3 mb-4">
+      <div
+        v-for="(trainer, index) in trainers"
+        :key="index"
+        class="col-md-3 mb-4"
+      >
         <div class="card custom-card">
           <div class="card-overlay">
-            <h5 class="card-title">John Der</h5>
-            <h6 class="card-title">Biker</h6>
+            <h5 class="card-title">{{ trainer.name }}</h5>
+            <h6 class="card-title">{{ trainer.role }}</h6>
             <div class="social-icons">
               <i class="fab fa-facebook"></i>
               <i class="fab fa-twitter"></i>
               <i class="fab fa-instagram"></i>
             </div>
           </div>
-          <img src="../../assets/img/biker1.jpg" alt="Card image" />
-        </div>
-      </div>
-      <div class="col-md-3 mb-4">
-        <div class="card custom-card">
-          <div class="card-overlay">
-            <h5 class="card-title">John Der</h5>
-            <h6 class="card-title">Biker</h6>
-            <div class="social-icons">
-              <i class="fab fa-facebook"></i>
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-instagram"></i>
-            </div>
-          </div>
-          <img
-            src="../../assets/img/biker2.jpg"
-            class="card-img-top"
-            alt="Card image"
-          />
-          <div class="card-body"></div>
-        </div>
-      </div>
-      <div class="col-md-3 mb-4">
-        <div class="card custom-card">
-          <div class="card-overlay">
-            <h5 class="card-title">John Der</h5>
-            <h6 class="card-title">Biker</h6>
-            <div class="social-icons">
-              <i class="fab fa-facebook"></i>
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-instagram"></i>
-            </div>
-          </div>
-          <img
-            src="../../assets/img/biker3.jpg"
-            class="card-img-top"
-            alt="Card image"
-          />
-          <div class="card-body"></div>
-        </div>
-      </div>
-      <div class="col-md-3 mb-4">
-        <div class="card custom-card">
-          <div class="card-overlay">
-            <h5 class="card-title">John Der</h5>
-            <h6 class="card-title">Biker</h6>
-            <div class="social-icons">
-              <i class="fab fa-facebook"></i>
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-instagram"></i>
-            </div>
-          </div>
-          <img
-            src="../../assets/img/biker4.jpg"
-            class="card-img-top"
-            alt="Card image"
-          />
-          <div class="card-body"></div>
+          <img :src="trainer.imageSrc" class="card-img-top" alt="Card image" />
         </div>
       </div>
     </div>
@@ -118,7 +96,6 @@
 .social-icons i {
   margin: 0 5px;
 }
-
 h1 {
   font-size: 3rem;
   font-weight: 700;

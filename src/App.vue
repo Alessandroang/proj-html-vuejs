@@ -7,9 +7,11 @@ import BikeEvents from "./components/Content/BikeEvents.vue";
 import OurBiker from "./components/Content/OurBiker.vue";
 import ResentArticles from "./components/Content/ResentArticles.vue";
 import SpecialPacks from "./components/Content/SpecialPacks.vue";
+import Loader from "./components/Content/Loader.vue";
 </script>
 
 <template>
+  <Loader />
   <AppHeader />
   <Slider />
   <TrainingBox />

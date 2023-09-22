@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container mt-4">
     <div class="text-center mb-4">
       <h1>Our Professional Cycling Trainings</h1>
       <h4>Learn from the mountain bike expert</h4>
@@ -63,7 +63,7 @@
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .card {
   width: 16rem;
   margin-bottom: 20px;
