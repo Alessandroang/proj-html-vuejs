@@ -1,59 +1,90 @@
-<script>
-export default {
-  data() {
-    return {
-      articles: [
-        {
-          date: "17.04.2023",
-          imageSrc: "src/assets/img/news-bike5.jpg",
-          title: "Road bike or mountain bike?",
-          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc ut dignissim cursus.",
-        },
-        {
-          date: "05.05.2023",
-          imageSrc: "src/assets/img/news-bike6.jpg",
-          title: "How long does it take 5 km by bike",
-          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc ut dignissim cursus.",
-        },
-        {
-          date: "29.12.2022",
-          imageSrc: "src/assets/img/news-bike3.jpg",
-          title: "How much should you cycle a day?",
-          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc ut dignissim cursus.",
-        },
-        {
-          date: "12.03.2023",
-          imageSrc: "src/assets/img/news-bike4.jpg",
-          title: "What is mountain biking?",
-          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc ut dignissim cursus.",
-        },
-      ],
-    };
-  },
-};
-</script>
-
 <template>
   <div class="container mt-5 text-center">
     <h1 class="mb-3">Recent News & Articles</h1>
     <h5 class="mb-5">Useful information about bikes</h5>
     <div class="card-container">
       <div class="row justify-content-around">
-        <div
-          class="col-md-3 mb-4"
-          v-for="(article, index) in articles"
-          :key="index"
-        >
+        <!-- Article 1 -->
+        <div class="col-md-3 mb-4">
           <div class="card">
             <img
-              :src="article.imageSrc"
+              src="../../assets/img/news-bike5.jpg"
               class="card-img-top"
-              alt="Article Image"
+              alt="Road bike or mountain bike?"
             />
             <div class="card-body text-center">
-              <div class="card-date">{{ article.date }}</div>
-              <h4 class="card-title">{{ article.title }}</h4>
-              <p class="card-text">{{ article.text }}</p>
+              <div class="card-date">17.04.2023</div>
+              <h4 class="card-title">Road bike or mountain bike?</h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
+                purus eget nunc ut dignissim cursus.
+              </p>
+              <div class="button-more">
+                <button class="btn btn-dark">More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 2 -->
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img
+              src="../../assets/img/news-bike6.jpg"
+              class="card-img-top"
+              alt="How long does it take 5 km by bike"
+            />
+            <div class="card-body text-center">
+              <div class="card-date">05.05.2023</div>
+              <h4 class="card-title">How long does it take 5 km by bike</h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
+                purus eget nunc ut dignissim cursus.
+              </p>
+              <div class="button-more">
+                <button class="btn btn-dark">More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 3 -->
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img
+              src="../../assets/img/news-bike3.jpg"
+              class="card-img-top"
+              alt="How much should you cycle a day?"
+            />
+            <div class="card-body text-center">
+              <div class="card-date">29.12.2022</div>
+              <h4 class="card-title">How much should you cycle a day?</h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
+                purus eget nunc ut dignissim cursus.
+              </p>
+              <div class="button-more">
+                <button class="btn btn-dark">More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 4 -->
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img
+              src="../../assets/img/news-bike4.jpg"
+              class="card-img-top"
+              alt="What is mountain biking?"
+            />
+            <div class="card-body text-center">
+              <div class="card-date">12.03.2023</div>
+              <h4 class="card-title">What is mountain biking?</h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
+                purus eget nunc ut dignissim cursus.
+              </p>
               <div class="button-more">
                 <button class="btn btn-dark">More</button>
               </div>
